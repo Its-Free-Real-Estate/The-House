@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <title>3D Home</title>
+</head>
+
+<body>
+
+    <div class="icons" id="icons">
+
+        <h1> The House </h1>
+        <br>
+        <ul>
+            <!--Nav Bar-->
+
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="DesignElements.html">Creation</a> </li>
+            <li><a href="Random.html">Inspiration</a> </li>
+            <li><a href="https://www.blender.org/">Blender</a> </li>
+
+
+        </ul>
+
+    </div>
+
+    <!--Sketchfab link-->
+
+    <div class="sketchfab-embed-wrapper"><iframe src="https://sketchfab.com/models/6b334c7e7d7c4e8c9b3de7d175efb7fe/embed" id="Fab" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+    </div>
+
+    <div class="menu"> <button class="button" onclick="myFunction()">Menu</button> </div>
+
+
+    <!--Script for Menu button-->
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("icons");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

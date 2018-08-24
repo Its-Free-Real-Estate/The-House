@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <title>Creation</title>
+</head>
+
+
+
+
+<body>
+
+    <!--Nav Bar-->
+
+
+    <div class="icon" id="icon">
+
+        <h1> The House </h1>
+        <br>
+        <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li><a class="active" href="DesignElements.html">Creation</a></li>
+            <li> <a href="Random.html">Inspiration</a> </li>
+            <li> <a href="https://www.blender.org/">Blender</a> </li>
+
+
+        </ul>
+
+    </div>
+
+    <!--Paragraph of the creation-->
+
+
+    <div class="creation">
+        <br>
+        <br>
+        <h2>The Creation</h2>
+        <br>
+        <p> To create the object I used the program Blender. Blender is a complex </p>
+
+        <p> program but it is reliable and effective. Starting out I decided to make</p>
+
+        <p> Base and walls for the house. The Hardest part was trying to add the Roof</p>
+
+        <p> since I had to rotate the object. Once I was happy with the base I started</p>
+
+        <p> to add detail to the house e.g. the chimney, bushes, windows, door and </p>
+
+        <p> The Pathway. Once I was happy with the house I added colour to it. Since I</p>
+
+        <p> wanted to make the house look wooden I made the walls light brown and the </p>
+
+        <p> posts dark brown. Then I made the grass light green and the Bushes dark green </p>
+
+        <p> to resemble a difference. Then I made the door grey to make it stand out. </p>
+
+        <p> Lastly, I made the window. To make it seem like a window I used a light blue. </p>
+
+        <p> Once I had completed the house I uploaded it to Sketchfab for everyone to see. </p>
+
+        <p> You can go to Stetchfab and see other people’s creations made by Blender or other </p>
+
+        <p> platforms. If you want to download blender there is a link on the home page. </p>
+
+
+
+
+
+
+    </div>
+
+    <!--slide show-->
+
+    <div class="Slide">
+        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="right" onclick="plusDivs(+1)">&#10095;</button>
+
+        <img class="pic" src="Images/Base.PNG" alt="Base of the building">
+        <img class="pic" src="Images/Walls.PNG" alt="Walls of the building">
+        <img class="pic" src="Images/Starter.PNG" alt="Completed building">
+        <img class="pic" src="Images/House.PNG" alt="With detail">
+
+
+        <p> Click either arrow. </p>
+
+
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("pic");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+
+    </script>
+
+
+
+    <div class="hud"> <button class="ton" onclick="myFunction()">Menu</button> </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("icon");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+    </script>
+
+
+
+</body>
+
+
+
+
+
+</html>
